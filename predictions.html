@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prédictions des Sentiments Twitter</title>
+</head>
+<body>
+    <h1>Prédictions des Sentiments Twitter</h1>
+    <ul>
+        {% for prediction in predictions %}
+        <li>ID du Tweet: {{ prediction['Tweet ID'] }}, Contenu: {{ prediction['Tweet content'] }}, Prédiction: {{ prediction['prediction'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
